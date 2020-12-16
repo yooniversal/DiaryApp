@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage"
+    android:background="@drawable/splash_bg"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:id="@+id/Here_is"
+    >
+
+    <ImageView
+        android:layout_weight="0.8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_quill"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#8C9191"
+        android:inputType="text"
+        android:clickable="true"
+        android:hint=" ID"
+        android:textColor="#8C9191"
+        android:textColorHint="#8C9191"
+        android:textSize="20dp"
+        android:singleLine="true"
+        android:ems="10"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#8C9191"
+        android:inputType="text"
+        android:clickable="true"
+        android:hint=" PASSWORD"
+        android:textColor="#8C9191"
+        android:textColorHint="#8C9191"
+        android:textSize="20dp"
+        android:singleLine="true"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/btn_signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="계정이 없으신가요?"
+        android:textColor="#DCFFFFFF"
+        android:textSize="15dp"
+        android:layout_marginLeft="60dp"
+        />
+
+    <TextView
+        android:id="@+id/btn_login"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_button"
+        />
+
+</LinearLayout>
