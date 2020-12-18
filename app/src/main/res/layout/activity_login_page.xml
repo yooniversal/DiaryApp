@@ -22,6 +22,7 @@
         />
 
     <EditText
+        android:id="@+id/Edit_ID"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:backgroundTint="#8C9191"
@@ -37,6 +38,7 @@
         />
 
     <EditText
+        android:id="@+id/Edit_PW"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:backgroundTint="#8C9191"
