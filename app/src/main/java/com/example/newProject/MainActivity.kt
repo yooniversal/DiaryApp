@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.View
 import android.content.Intent;
 import com.example.newProject.databinding.ActivityMainBinding
+import com.example.newProject.ui.CalendarActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         // R(res)/layout/activity_main.xml 연결
         setContentView(R.layout.activity_main)
+        this.supportActionBar?.setDisplayShowTitleEnabled(false)
 
         /*
         Timer().schedule(2000){
@@ -22,7 +24,8 @@ class MainActivity : AppCompatActivity() {
         }
         */
 
-        startActivity(Intent(this, LoginPage::class.java))
+        //startActivity(Intent(this, LoginPage::class.java))
+        startActivity(Intent(this, CalendarActivity::class.java))
         finish()
         
         Log.d(TAG, "MainActivity - onCreate() called")

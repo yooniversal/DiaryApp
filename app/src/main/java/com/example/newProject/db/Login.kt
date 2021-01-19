@@ -1,4 +1,4 @@
-package com.example.newProject
+package com.example.newProject.db
 
 //Output
 data class Login(

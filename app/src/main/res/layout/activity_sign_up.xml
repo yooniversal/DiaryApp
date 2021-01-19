@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    android:orientation="vertical"
+    tools:context=".LoginPage">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+
+        android:layout_height="50dp"
+        android:layout_marginTop="137dp"
+        android:layout_marginBottom="44dp"
+        android:src="@drawable/ic_quill"
+        app:layout_constraintBottom_toTopOf="@+id/Edit_ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Edit_PW"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#8C9191"
+        android:clickable="true"
+        android:ems="10"
+        android:hint=" PASSWORD"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColor="#8C9191"
+        android:textColorHint="#8C9191"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/Edit_ConfimPW"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_ID" />
+
+    <EditText
+        android:id="@+id/Edit_ID"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#8C9191"
+        android:clickable="true"
+        android:ems="10"
+        android:hint=" ID"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColor="#8C9191"
+        android:textColorHint="#8C9191"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/Edit_PW"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/Edit_ConfimPW"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="69dp"
+        android:backgroundTint="#8C9191"
+        android:clickable="true"
+        android:ems="10"
+        android:hint=" CONFIRM PASSWORD"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColor="#8C9191"
+        android:textColorHint="#8C9191"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_PW" />
+
+    <TextView
+        android:id="@+id/btn_confirm"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="51dp"
+        android:background="@drawable/round_button"
+        android:gravity="center"
+        android:text="확인"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_cancel"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cancel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/round_button"
+        android:gravity="center"
+        android:text="취소"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_confirm"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_ConfimPW" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
