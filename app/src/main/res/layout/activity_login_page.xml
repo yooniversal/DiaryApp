@@ -42,7 +42,7 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:backgroundTint="#8C9191"
-        android:inputType="text"
+        android:inputType="textPassword"
         android:clickable="true"
         android:hint=" PASSWORD"
         android:textColor="#8C9191"
