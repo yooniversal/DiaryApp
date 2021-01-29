@@ -7,7 +7,6 @@ import android.util.Log
 import androidx.appcompat.app.AlertDialog
 import com.example.newProject.databinding.ActivitySignUpBinding
 import com.example.newProject.db.Login
-import com.google.firebase.auth.FirebaseAuth
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -16,12 +15,6 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.POST
-
-//// Google Login result
-//private val RC_SIGN_IN = 9001
-//
-//// Firebase Auth
-//private var firebaseAuth: FirebaseAuth? = null
 
 class SignUpActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySignUpBinding
@@ -104,8 +97,6 @@ class SignUpActivity : AppCompatActivity() {
             }
         }
 
-//        firebaseAuth = FirebaseAuth.getInstance();
-
         binding.btnCancel.setOnClickListener {
             startActivity(intent)
             finish()
@@ -113,28 +104,4 @@ class SignUpActivity : AppCompatActivity() {
 
         setContentView(binding.root)
     }
-
-    /*
-    private fun createUser() {
-        var ID = binding.EditID.text.toString()
-        var PW = binding.EditPW.text.toString()
-        var CONFIRMPW = binding.EditConfimPW.text.toString()
-
-        if(PW != CONFIRMPW){
-            Toast.makeText(this, "비밀번호가 일치하지 않습니다.", Toast.LENGTH_SHORT).show()
-        }
-        else {
-            firebaseAuth!!.createUserWithEmailAndPassword(ID, PW)
-            .addOnCompleteListener(this) {
-                if (it.isSuccessful) {
-                    val user = firebaseAuth?.currentUser
-                    Toast.makeText(this, "회원가입이 완료되었습니다.", Toast.LENGTH_SHORT).show()
-                }
-                else {
-                    Toast.makeText(this, "회원가입에 실패했습니다.", Toast.LENGTH_SHORT).show()
-                }
-            }
-        }
-    }
-    */
 }
