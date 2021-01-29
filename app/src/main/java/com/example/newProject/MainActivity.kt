@@ -23,10 +23,6 @@ class MainActivity : AppCompatActivity() {
             //JUST DELAY 2 SEC
         }
         */
-
-        //startActivity(Intent(this, LoginPage::class.java))
-        startActivity(Intent(this, CalendarActivity::class.java))
-        finish()
         
         Log.d(TAG, "MainActivity - onCreate() called")
     }
