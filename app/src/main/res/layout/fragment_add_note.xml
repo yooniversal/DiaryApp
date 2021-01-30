@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:hint="날짜를 입력해주세요. (YYYY/MM/DD)"
         android:inputType="text"
+        android:fontFamily="@font/maruburiregular"
         />
 
     <EditText
@@ -20,6 +21,7 @@
         android:layout_below="@id/edit_text_date"
         android:hint="제목을 입력해주세요."
         android:inputType="text"
+        android:fontFamily="@font/maruburiregular"
         />
 
     <EditText
@@ -30,7 +32,9 @@
         android:layout_marginTop="-5dp"
         android:gravity="top"
         android:hint="내용을 입력해주세요."
-        android:inputType="textMultiLine" />
+        android:inputType="textMultiLine"
+        android:fontFamily="@font/maruburiregular"
+        />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/button_save"

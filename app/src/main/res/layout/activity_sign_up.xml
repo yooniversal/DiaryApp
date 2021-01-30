@@ -19,7 +19,8 @@
         app:layout_constraintBottom_toTopOf="@+id/Edit_ID"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/maruburiregular"/>
 
     <EditText
         android:id="@+id/Edit_PW"
@@ -41,7 +42,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Edit_ID" />
+        app:layout_constraintTop_toBottomOf="@+id/Edit_ID"
+        android:fontFamily="@font/maruburiregular"/>
 
     <EditText
         android:id="@+id/Edit_ID"
@@ -63,7 +65,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        android:fontFamily="@font/maruburiregular"
+        />
 
     <EditText
         android:id="@+id/Edit_ConfimPW"
@@ -85,7 +89,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Edit_PW" />
+        app:layout_constraintTop_toBottomOf="@+id/Edit_PW"
+        android:fontFamily="@font/maruburiregular"/>
 
     <TextView
         android:id="@+id/btn_confirm"
