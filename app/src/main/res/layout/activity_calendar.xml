@@ -18,7 +18,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/nav_graph"
-        android:fontFamily="@font/maruburiregular"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
