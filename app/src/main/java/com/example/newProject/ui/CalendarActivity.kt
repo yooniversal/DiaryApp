@@ -11,7 +11,6 @@ import androidx.navigation.ui.NavigationUI
 import com.example.newProject.LoginPage
 import com.example.newProject.R
 import com.example.newProject.databinding.ActivityCalendarBinding
-import org.jetbrains.anko.toolbar
 
 class CalendarActivity : AppCompatActivity() {
     val TAG: String = "CalenderActivity"
