@@ -10,6 +10,7 @@
     android:orientation="vertical"
     android:weightSum="1"
     android:id="@+id/Here_is"
+    android:fitsSystemWindows="true"
     >
 
     <ImageView
